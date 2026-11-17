@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Larky;
+    src: url(/posters_panic_te25B/misc/super-larky-font/SuperLarky-nALLR.ttf);
+}
+
+body{
+    margin: 0;
+}
+
+#mainpage{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas: 
+    'hd hd hd'
+    'as1 sc as2';
+    grid-template-rows: 12.5vh 87.5vh;
+    grid-template-columns: 10% 80% 10%;
+}
+
+#mainpageheader{
+    background-color: rgba(244, 190, 50, 1);
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px gray;
+}
+
+#mainpagesection{
+    grid-area: sc;
+    display: flex;
+}
+
+#logo{
+    width: 5%;
+}
+
+#mainpageaside1{
+    grid-area: as1;
+    background-color: rgb(244, 52, 203);
+    z-index: -1;
+}
+
+#mainpageaside2{
+    grid-area: as2;
+    background-color: rgb(244, 52, 203);
+    z-index: -1;
+}
+
+h1{
+    font-family: Larky;
+}
